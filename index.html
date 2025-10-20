@@ -78,8 +78,8 @@
                     app: "counter",
                     mark: "counter-do",
                     json: JSON.parse(poke), // encode the poke string for consumption by urbit,
-                    onSuccess: () => { console.log('poke success'); },
-                    onError: (err) => { console.log('poke error', err); }
+                    onSuccess: () => { console.log('poke success'); },      // could attach more ports
+                    onError: (err) => { console.log('poke error', err); }   // to handle these events
                 });
             }
         });
